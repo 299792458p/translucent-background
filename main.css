@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(http://bit.ly/2gPLxZ4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    position: absolute;
+    top: 3em;
+    left: 10em;
+    width: 500px;
+    height: 350px;
+    background: inherit;
+    overflow: hidden;
+}
+
+div:before {
+    content: "";
+    width: 550px;
+    height: 400px;
+    background: inherit;
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+    filter: blur(5px);
+}
