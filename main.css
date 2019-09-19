@@ -54,8 +54,18 @@ div {
     font-size: 8em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    color: white;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/990140/download.png) -3em 0em no-repeat;
+    background: linear-gradient(90deg, #db5353, #fff, #db5353);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-size: 90%;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -600%;
+    }
+    100% {
+        background-position: 600%;
+    }
 }
