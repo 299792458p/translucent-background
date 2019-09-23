@@ -27,18 +27,20 @@ div {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    background: inherit;
 }
 
 .container>div {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: inherit;
 }
 
 .transparent-bg,
 .translucent-bg {
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 300px;
     background: inherit;
     overflow: hidden;
     border-radius: 5px;
@@ -54,8 +56,8 @@ div {
 
 .translucent-bg::before {
     content: "";
-    width: 550px;
-    height: 400px;
+    width: 450px;
+    height: 350px;
     background: inherit;
     position: absolute;
     left: -25px;
@@ -148,7 +150,7 @@ div {
     height: auto;
     font-size: 8em;
     font-weight: bold;
-    letter-spacing: -.18em;
+    letter-spacing: -.22em;
     text-transform: uppercase;
 }
 
